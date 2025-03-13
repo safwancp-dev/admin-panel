@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyApp</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+                    <!-- Logout Button (Right Side) -->
+                    <li class="nav-item">
+                        <!-- Form for logout POST method -->
+                        <form action="/user/logout" method="POST" class="d-inline">
+                            <button type="submit" class="btn btn-danger ms-3">Logout</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-5">
+        <h1>Welcome to the Homepage</h1>
+        <p>This is the dashboard where users can navigate.</p>
+    </div>
+    
+    <!-- User Profile -->
+    <div id="profile" class="container mt-5">
+        <h2>User Profile</h2>
+        <div class="card p-4">
+            <p><strong>Name:</strong><%= user.name %></p>
+            <p><strong>Email:</strong> <%= user.email %></p>
+            <!-- <p><strong>Joined:</strong> January 2024</p> -->
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>  
