@@ -9,9 +9,10 @@
 <body>
     <div class="container">
         <h2>Login</h2>
-        <!-- Show Invalid Credentials in a Red Button -->
         <% if (msg) { %>
-            <button class="btn-danger" id="error-btn"><%= msg %></button>
+            <div class="error-message">
+                <%= msg %>
+            </div>
         <% } %>
         <form action="/user/login" method="POST">
             <div class="input-group">
