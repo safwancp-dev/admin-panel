@@ -72,5 +72,14 @@ p a {
 p a:hover {
     text-decoration: underline;
 }
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    text-align: center;
+}
 
 
