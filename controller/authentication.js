@@ -13,7 +13,7 @@ const renderloginpage=((req,res)=>{
 })
 
 const rendersignuppage=((req,res)=>{
-    res.render('signup')
+    res.render('signup',msg:null)
 })
 
 
