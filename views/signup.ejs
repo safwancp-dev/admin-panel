@@ -9,6 +9,11 @@
 <body>
     <div class="container">
         <h2> Signup</h2>
+<% if (msg) { %>
+            <div class="error-message">
+                <%= msg %>
+            </div>
+        <% } %>
         <form action="/user/signup" method="POST">
             <div class="input-group">
                 <label for="name">Name</label>
